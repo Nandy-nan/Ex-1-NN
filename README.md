@@ -80,29 +80,29 @@ print("Lenght of X_test ",len(X_test))
 SHOW YOUR OUTPUT HERE
 ![image](https://github.com/user-attachments/assets/04eec952-e0de-4fa1-9ade-137a9c3e7fd7)
 
-X VALUES:
+## X VALUES:
 ![image](https://github.com/user-attachments/assets/51914183-2d03-4f4b-8960-abf93a4b0568)
 
-Y VALUES:
+## Y VALUES:
 ![image](https://github.com/user-attachments/assets/dd7af305-0ffe-4923-ae09-381252984808)
 
-NULL VALUES:
+## NULL VALUES:
 ![image](https://github.com/user-attachments/assets/3c861555-c19d-43fa-8fbd-1ad12d881449)
 
-DUPLICATED VALUES:
+## DUPLICATED VALUES:
 ![image](https://github.com/user-attachments/assets/6f1f058f-60d4-4f03-ab23-8d395423dc86)
 
-DESCRIPTION:
+## DESCRIPTION:
 
 ![image](https://github.com/user-attachments/assets/dd58f16b-0215-404e-b8b3-70632d87ab4b)
 
-NORMALIZESD DATASET:
+## NORMALIZESD DATASET:
 ![image](https://github.com/user-attachments/assets/89a8b057-12ba-4043-a3ad-88a1351c2412)
 
-TRAINNING DATA:
+## TRAINNING DATA:
 ![image](https://github.com/user-attachments/assets/f728fb4a-92c0-442f-a9c6-c1c564fcf641)
 
-TESTING DATA:
+## TESTING DATA:
 ![image](https://github.com/user-attachments/assets/c55cf764-c3ee-46c2-8b45-20ba4c6f23e7)
 
 
