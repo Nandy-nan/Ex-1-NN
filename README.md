@@ -1,5 +1,5 @@
-<H3>ENTER YOUR NAME</H3>
-<H3>ENTER YOUR REGISTER NO.</H3>
+<H3>NAME</H3> Nandhana.R
+<H3> REGISTER NO.</H3>212223040124
 <H3>EX. NO.1</H3>
 <H3>DATE</H3>
 <H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
@@ -38,10 +38,83 @@ STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
 TYPE YOUR CODE HERE
+import pandas as pd
+import io
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+
+data = pd.read_csv("Churn_Modelling.csv")
+data
+data.head()
+
+X=data.iloc[:,:-1].values
+X
+
+y=data.iloc[:,-1].values
+y
+
+data.isnull().sum()
+
+data.duplicated()
+
+data.describe()
+
+data = data.drop(['Surname', 'Geography','Gender'], axis=1)
+data.head()
+
+scaler=MinMaxScaler()
+df1=pd.DataFrame(scaler.fit_transform(data))
+print(df1)
+
+X_train ,X_test ,y_train,y_test=train_test_split(X,y,test_size=0.2)
+
+X_train
+
+X_test
+
+print("Lenght of X_test ",len(X_test))
 
 
 ## OUTPUT:
 SHOW YOUR OUTPUT HERE
+![image](https://github.com/user-attachments/assets/04eec952-e0de-4fa1-9ade-137a9c3e7fd7)
+
+X VALUES:
+![image](https://github.com/user-attachments/assets/51914183-2d03-4f4b-8960-abf93a4b0568)
+
+Y VALUES:
+![image](https://github.com/user-attachments/assets/dd7af305-0ffe-4923-ae09-381252984808)
+
+NULL VALUES:
+![image](https://github.com/user-attachments/assets/3c861555-c19d-43fa-8fbd-1ad12d881449)
+
+DUPLICATED VALUES:
+![image](https://github.com/user-attachments/assets/6f1f058f-60d4-4f03-ab23-8d395423dc86)
+
+DESCRIPTION:
+
+![image](https://github.com/user-attachments/assets/dd58f16b-0215-404e-b8b3-70632d87ab4b)
+
+NORMALIZESD DATASET:
+![image](https://github.com/user-attachments/assets/89a8b057-12ba-4043-a3ad-88a1351c2412)
+
+TRAINNING DATA:
+![image](https://github.com/user-attachments/assets/f728fb4a-92c0-442f-a9c6-c1c564fcf641)
+
+TESTING DATA:
+![image](https://github.com/user-attachments/assets/c55cf764-c3ee-46c2-8b45-20ba4c6f23e7)
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## RESULT:
